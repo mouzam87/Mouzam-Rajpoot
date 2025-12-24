@@ -3,36 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Developer Portfolio</title>
-    <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; margin: 0; color: #333; background: #f4f4f4; }
-        header { background: #2c5037; color: #fff; padding: 1rem; text-align: center; }
-        .container { width: 80%; margin: auto; overflow: hidden; padding: 20px; background: #f7f4f4; }
-        .project-card { border: 1px solid #ddd; padding: 15px; margin-bottom: 10px; border-radius: 8px; }
-        .btn { background: #4fb0f1; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; }
-    </style>
+    <title>Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>[Mouzam Kaleem] | C Developer & Web Learner</h1>
-        <p>Turning logic into code. Based in Pakistan.</p>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <div class="container">
-        <h2>About Me</h2>
-        <p>I am learning C programming and Web Development on Macbook Pro. My goal is to start online earning by building software solutions.</p>
-        
-        <h2>My Projects</h2>
-        <div class="project-card">
-            <h3>Age Calculator (C Language)</h3>
-            <p>A simple terminal-based app that calculates your age based on birth year.</p>
-        </div>
-        <div class="project-card">
-            <h3>Personal Portfolio Website</h3>
-            <p>The website you are looking at right now, hosted on GitHub!</p>
-        </div>
-        
-        <br>
-        <a href="mailto:your-email@example.com" class="btn">Hire Me / Contact</a>
-    </div>
+    <main>
+        <section id="home" class="hero">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a web developer passionate about creating amazing websites.</p>
+            <button>Get In Touch</button>
+        </section>
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <p>I specialize in modern web development, focusing on responsive design and user experience.</p>
+        </section>
+        <section id="services" class="features">
+            <h2>What I Do</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Web Design</h3>
+                    <p>Creating beautiful and user-friendly designs.</p>
+                </div>
+                <div class="card">
+                    <h3>Development</h3>
+                    <p>Building robust and scalable web applications.</p>
+                </div>
+                <div class="card">
+                    <h3>Consulting</h3>
+                    <p>Providing expert advice on web technologies.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer id="contact">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </footer>
 </body>
 </html>
